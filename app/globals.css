@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #4976ff;
+  --primary-dark: #365ccf;
+  --secondary: #ededed;
+  --background-dark: #101922;
+}
+
+                        
+
+@theme {
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-secondary: var(--secondary);
+  --color-background-dark: var(--background-dark);
+}
+
+
+.cosmic-button {
+  @apply flex gap-x-2 items-center px-5 py-2 border border-primary text-primary rounded-md hover:bg-primary hover:text-white transition-all duration-300
+}
