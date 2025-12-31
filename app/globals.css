@@ -20,3 +20,12 @@
 .cosmic-button {
   @apply flex gap-x-2 items-center px-5 py-2 border border-primary text-primary rounded-md hover:bg-primary hover:text-white transition-all duration-300
 }
+
+html {
+  @apply scroll-smooth;
+}
+
+@utility text-glow {
+  @apply relative;
+  text-shadow: 0 0 10px rgba( 73, 118, 255, 1);
+}

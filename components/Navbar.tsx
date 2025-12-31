@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { Menu } from 'lucide-react'
 
 
 const Navbar = () => {
@@ -33,24 +34,26 @@ const Navbar = () => {
                     <Link href='/about'>
                         <li className='text-slate-700 dark:text-slate-200 hover:text-primary transition-colors font-bold'>About Us</li>
                     </Link>
-                    <Link href='/contact'>
-                        <li className='text-slate-700 dark:text-slate-200 hover:text-primary transition-colors font-bold'>Contact</li>
+                    <Link href='/projects'>
+                        <li className='text-slate-700 dark:text-slate-200 hover:text-primary transition-colors font-bold'>Our Projects</li>
                     </Link>
 
                 </ul>
                 {/* CTA button */}
                 <div className='hidden lg:flex items-center'>
-                    <Link href={'/quote'}
+                    <Link href={'/contact'}
                         className='cursor-pointer text-slate-700 dark:text-white font-bold bg-primary hover:bg-primary-dark py-3 px-6 rounded-full hover:scale-105 transition-all'>
 
-                        Get a Quote
+                        Contact Us
 
                     </Link>
                 </div>
 
                 <div className='lg:hidden text-slate-700 dark:text-slate-200 items-center'
                 onClick={() => setMenuOpen(!menuOpen)}>
-                    <span className='text-lg font-bold cursor-pointer'>Menu</span>
+                    <div className='text-lg font-bold h-fit cursor-pointer items-center justify-center'>
+                        <Menu />
+                    </div>
                 </div>
 
             </div>
@@ -68,11 +71,11 @@ const Navbar = () => {
                             <Link href={'/about'} className='text-slate-700 dark:text-slate-200 font-bold hover:text-primary'>
                                 About Us
                             </Link>
-                            <Link href={'/contact'} className='text-slate-700 dark:text-slate-200 font-bold hover:text-primary'>
-                                Contact
+                            <Link href={'/projects'} className='text-slate-700 dark:text-slate-200 font-bold hover:text-primary'>
+                                Our Projects
                             </Link>
-                            <Link href={'/quote'} className='text-slate-200 bg-primary text-center font-bold py-4 rounded-full'>
-                                Get a Quote
+                            <Link href={'/contact'} className='text-slate-200 bg-primary text-center font-bold py-4 rounded-full'>
+                                Contact Us
                             </Link>
                         </div>
                     </div>
