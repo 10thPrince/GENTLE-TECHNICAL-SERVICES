@@ -33,7 +33,7 @@ const Hero = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                     <a className="flex items-center justify-center rounded-full h-14 px-10 bg-primary hover:bg-primary-dark text-white text-base font-bold transition-all transform hover:scale-105 shadow-lg shadow-primary/30"
-                        href="/quote">
+                        href="/contact">
                         Book Inspection
                     </a>
                     <a className="flex items-center justify-center rounded-full h-14 px-10 bg-white hover:bg-slate-100 text-slate-900 text-base font-bold transition-all shadow-lg"

@@ -1,4 +1,4 @@
-import FreeInspection from "@/components/FreeInspection";
+import ContactInvite from "@/components/ContactInvite";
 import Hero from "@/components/Hero";
 import Nav2 from "@/components/Nav2";
 import Navbar from "@/components/Navbar";
@@ -13,8 +13,8 @@ export default function Home() {
       <Hero /> 
       <Qualities />
       <Services />
-      <FreeInspection />
       <Testimonials />
+      <ContactInvite />
     </div>
   );
 }
