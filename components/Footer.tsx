@@ -57,7 +57,7 @@ const Footer = () => {
                     <h4 className="text-white font-bold font-accent text-lg">Contact Us</h4>
                     <div className="flex items-start gap-3 text-sm">
                         <MapPinIcon className='text-primary' />
-                        <span className="text-slate-400">KK 123 St, Remera<br />Kigali, Rwanda</span>
+                        <span className="text-slate-400">Kigali, Rwanda</span>
                     </div>
                     <div className="flex items-center gap-3 text-sm">
                         <Phone className='text-primary'/>

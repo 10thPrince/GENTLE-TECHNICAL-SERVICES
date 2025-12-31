@@ -1,6 +1,7 @@
 import React from "react"
 import Image from "next/image"
 import { ShieldCheck, Headset, MapPin, ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 const Services = () => {
   const services = [
@@ -197,7 +198,7 @@ const Services = () => {
 
       {/* CTA Section */}
       <div className="w-full bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
-        <div className="mx-auto flex max-w-[1280px] flex-col items-center justify-between gap-10 px-4 py-16 md:flex-row md:px-10 md:py-24 relative overflow-hidden">
+        <div className="mx-auto flex w-full flex-col items-center justify-between gap-10 px-4 py-16 md:flex-row md:px-10 md:py-24 relative overflow-hidden">
 
           {/* Gradient Blobs */}
           <div className="absolute -right-20 -bottom-20 w-96 h-96 bg-primary/10 dark:bg-primary/20 rounded-full blur-[100px]"></div>
@@ -216,12 +217,10 @@ const Services = () => {
 
           {/* Buttons */}
           <div className="flex shrink-0 flex-col gap-4 sm:flex-row relative z-10 font-display">
-            <button className="flex h-14 items-center justify-center rounded-full bg-primary px-10 text-white text-base font-bold transition hover:bg-primary/80 dark:hover:bg-primary/70 shadow-lg shadow-primary/30">
-              Get a Free Quote
-            </button>
-            <button className="flex h-14 items-center justify-center rounded-full border border-gray-400 dark:border-gray-600 bg-transparent px-10 text-gray-900 dark:text-white text-base font-bold transition hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-primary">
+            
+            <Link href={'/contact'} className="flex h-14 items-center justify-center rounded-full border border-gray-400 dark:border-gray-600 bg-transparent px-10 text-gray-900 dark:text-white text-base font-bold transition hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-primary">
               Contact Us
-            </button>
+            </Link>
           </div>
         </div>
       </div>
