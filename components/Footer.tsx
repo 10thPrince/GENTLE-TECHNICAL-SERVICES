@@ -1,14 +1,15 @@
 import { Facebook, Instagram, LocateIcon, LocationEdit, Mail, MapPinIcon, Phone, Twitter, X } from 'lucide-react'
+import Image from 'next/image'
 import React from 'react'
 
 const Footer = () => {
   return (
     <footer className="bg-slate-900 text-slate-300 pt-20 pb-10 border-t border-slate-800">
-        <div className="max-w-[1200px] mx-auto px-4 md:px-10">
+        <div className="max-w-300 mx-auto px-4 md:px-10">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <div className="flex flex-col gap-6">
                     <div className="flex items-center gap-3 text-white">
-                        <img src={'/assets/gentle-technical-services-top-logo-transparent.png'}
+                        <img src={'/assets/gentle-main.png'}
                             className='w-[25%] ' alt='The GTS Logo' />
                         <span className="font-bold text-xl font-accent tracking-wide">GENTLE TECH</span>
                     </div>
