@@ -12,7 +12,7 @@ const Navbar = () => {
         <header className='sticky top-0 z-50  bg-white/90 dark:bg-slate-900/95 border-slate-100 dark:border-slate-800'>
             <div className='max-w-300 mx-auto px-4 md:px-10 py-2 md:py-4 flex justify-between'>
                 <div className='flex space-x-3'>
-                    <Image src={'/assets/gentle-technical-services-top-logo-transparent.png'}
+                    <Image src={'/assets/gentle-main.png'}
                         width={64}
                         height={64}
                         alt='The Main Logo' />
