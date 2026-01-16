@@ -72,7 +72,7 @@ const Footer = () => {
             </div>
             <div
                 className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
-                <p>© 2024 Gentle Technical Services. All rights reserved.</p>
+                <p>©  {new Date().getFullYear()}{" "} Gentle Technical Services. All rights reserved.</p>
                 <div className="flex gap-6">
                     <a className="hover:text-white transition-colors" href="#">Privacy Policy</a>
                     <a className="hover:text-white transition-colors" href="#">Terms of Service</a>
