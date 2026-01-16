@@ -77,6 +77,10 @@ export const metadata: Metadata = {
     },
   },
 
+  icons: {
+    icon: "/favicon3.ico",
+  },
+
   alternates: {
     canonical: "https://gentle-technical-services.vercel.app/",
   },

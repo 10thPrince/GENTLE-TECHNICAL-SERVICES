@@ -2,6 +2,54 @@ import React from "react"
 import Image from "next/image"
 import { ShieldCheck, Headset, MapPin, ArrowRight } from "lucide-react"
 import Link from "next/link"
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Technical Services in Rwanda | HVAC, Electrical & Ventilation",
+  description:
+    "Explore professional air conditioning installation, HVAC maintenance, ventilation systems, and electrical works by Gentle Technical Services in Rwanda. Serving homes, offices, and industries.",
+
+  keywords: [
+    "technical services in Rwanda",
+    "HVAC services Rwanda",
+    "air conditioning installation Kigali",
+    "AC maintenance Rwanda",
+    "ventilation systems Rwanda",
+    "electrical works Kigali",
+    "Gentle Technical Services",
+  ],
+
+  alternates: {
+    canonical: "https://www.gentletechnicalservices.com/services",
+  },
+
+  openGraph: {
+    title: "Our Services | Gentle Technical Services Rwanda",
+    description:
+      "Professional HVAC, air conditioning, ventilation, and electrical services for residential, commercial and industrial clients across Rwanda.",
+    url: "https://www.gentletechnicalservices.com/services",
+    siteName: "Gentle Technical Services",
+    images: [
+      {
+        url: "/public/assets/gentle-main-2.png",
+        width: 1200,
+        height: 630,
+        alt: "Gentle Technical Services HVAC and Electrical Services",
+      },
+    ],
+    type: "website",
+    locale: "en_US",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Technical Services in Rwanda | Gentle Technical Services",
+    description:
+      "Reliable HVAC, AC installation, ventilation and electrical works in Kigali and across Rwanda.",
+    images: ["/public/assets/gentle-main-2.png"],
+  },
+};
+
 
 const Services = () => {
   const services = [
@@ -41,17 +89,17 @@ const Services = () => {
       <div className="relative h-[50vh] lg:h-[70vh]">
         <Image
           src='/assets/landing-page-2.jpg'
-          alt="Services background"
+          alt="Air conditioning installation service in Rwanda"
           fill
           className="object-cover"
           priority
         />
         <div className="absolute inset-0 bg-slate-900/70 dark:bg-black/50"></div>
         <div className="relative flex flex-col z-10 justify-center h-full items-center gap-4 text-white lg:text-5xl font-bold">
-          <div className="flex gap-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+          <h1 className="flex gap-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
             <span>Expert Technical </span>
             <span className="text-primary">Services In Rwanda</span>
-          </div>
+          </h1>
           <p className="text-lg w-[80%] md:w-[50%] font-semibold text-slate-300 text-center tracking-widest">
             Providing top-tier HVAC, electrical and solar for homes, offices and
             Industries across Rwanda.
@@ -217,7 +265,7 @@ const Services = () => {
 
           {/* Buttons */}
           <div className="flex shrink-0 flex-col gap-4 sm:flex-row relative z-10 font-display">
-            
+
             <Link href={'/contact'} className="flex h-14 items-center justify-center rounded-full border border-gray-400 dark:border-gray-600 bg-transparent px-10 text-gray-900 dark:text-white text-base font-bold transition hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-primary">
               Contact Us
             </Link>
