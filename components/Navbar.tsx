@@ -11,8 +11,8 @@ const Navbar = () => {
     return (
         <header className='sticky top-0 z-50  bg-white/90 dark:bg-slate-900/95 border-slate-100 dark:border-slate-800'>
             <div className='max-w-300 mx-auto px-4 md:px-10 py-2 md:py-4 flex justify-between'>
-                <div className='flex space-x-3'>
-                    <Image src={'/assets/gentle-main.png'}
+                <Link href='/' className='flex space-x-3'>
+                    <Image src={'/assets/gentle-main-2.png'}
                         width={64}
                         height={64}
                         alt='The Main Logo' />
@@ -22,7 +22,7 @@ const Navbar = () => {
                         <span className='text-[11px] text-slate-500 font-bold uppercase mt-1 tracking-[0.2em] '>TECHNICAL SERVICES</span>
                     </div>
 
-                </div>
+                </Link>
                 {/* Navgations */}
                 <ul className='hidden lg:flex items-center gap-10'>
                     <Link href='/' >

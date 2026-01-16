@@ -10,7 +10,25 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="min-w-fit flex flex-col bg-secondary dark:bg-background-dark  mx-auto">
-      <Hero /> 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Gentle Technical Services",
+            url: "https://gentle-technical-services.vercel.app/",
+            description:
+              "HVAC, electrical, plumbing and building maintenance company.",
+            address: {
+              "@type": "PostalAddress",
+              addressCountry: "RW",
+            },
+          }),
+        }}
+      />
+
+      <Hero />
       <Qualities />
       <Services />
       <Testimonials />
