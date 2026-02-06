@@ -94,13 +94,13 @@ const Services = () => {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-slate-900/70 dark:bg-black/50"></div>
-        <div className="relative flex flex-col z-10 justify-center h-full items-center gap-4 text-white lg:text-5xl font-bold">
+        <div className="absolute inset-0 bg-slate-200/60 dark:bg-slate-900/70 "></div>
+        <div className="relative flex flex-col z-10 justify-center h-full items-center gap-4 text-black dark:text-white lg:text-5xl font-bold">
           <h1 className="flex gap-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
             <span>Expert Technical </span>
             <span className="text-primary">Services In Rwanda</span>
           </h1>
-          <p className="text-lg w-[80%] md:w-[50%] font-semibold text-slate-300 text-center tracking-widest">
+          <p className="text-lg w-[80%] md:w-[50%] font-semibold text-slate-700 dark:text-slate-300 text-center tracking-widest">
             Providing top-tier HVAC, electrical and solar for homes, offices and
             Industries across Rwanda.
           </p>

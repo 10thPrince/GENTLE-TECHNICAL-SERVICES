@@ -13,13 +13,13 @@ const Navbar = () => {
             <div className='max-w-300 mx-auto px-4 md:px-10 py-2 md:py-4 flex justify-between'>
                 <Link href='/' className='flex space-x-3'>
                     <Image src={'/assets/gentle-main-2.png'}
-                        width={64}
-                        height={64}
+                        width={60}
+                        height={60}
                         alt='The Main Logo' />
 
                     <div className='flex flex-col'>
                         <span className='text-xl font-bold text-primary'>GENTLE </span>
-                        <span className='text-[11px] text-slate-500 font-bold uppercase mt-1 tracking-[0.2em] '>TECHNICAL SERVICES</span>
+                        <span className='text-md text-slate-500 font-bold uppercase tracking-[0.1em] '>TECHNICAL SERVICES</span>
                     </div>
 
                 </Link>
