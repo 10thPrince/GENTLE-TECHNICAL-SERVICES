@@ -7,11 +7,7 @@ const ContactDetails = () => {
     <main className="flex flex-1 flex-col items-center px-4 py-12 md:px-10 lg:px-40 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="layout-content-container flex w-full max-w-[1200px] flex-col flex-1">
         <div className="mb-10 flex flex-col items-center text-center">
-          <div className="mb-4 inline-flex items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900 px-4 py-1.5 transition-colors duration-300">
-            <span className="text-sm font-bold text-blue-700 dark:text-blue-300 tracking-wider uppercase font-display">
-              Reliable • Affordable • Ready to Work
-            </span>
-          </div>
+          
           <h1 className="text-gray-900 dark:text-white text-5xl font-bold leading-tight tracking-tight md:text-6xl">
             Get in Touch
           </h1>
