@@ -1,12 +1,12 @@
-import { Star } from 'lucide-react'
-import React from 'react'
+import { Star } from 'lucide-react';
+import React from 'react';
 
 const Testimonials = () => {
   return (
     <section className="py-24 bg-background-light dark:bg-slate-900">
         <div className="max-w-[1200px] mx-auto px-4 md:px-10">
-            <h2 className="text-3xl md:text-4xl font-bold font-accent text-center mb-16 text-slate-900 dark:text-white">
-                Trusted by Kigali Businesses</h2>
+            <h2 className="text-3xl md:text-5xl font-bold font-accent text-center mb-16 text-slate-900 dark:text-white">
+                Why choose Us</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div
                     className="bg-white dark:bg-slate-800 p-10 rounded-3xl shadow-sm border border-white dark:border-slate-700 relative">
