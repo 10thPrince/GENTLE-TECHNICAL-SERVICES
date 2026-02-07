@@ -55,7 +55,7 @@ const Projects = () => {
             {/* Hero */}
             <section className="relative h-[50vh] lg:h-[70vh] flex items-center justify-center text-center">
                 <Image src="/assets/about-two.jpg" alt="Projects" fill className="object-cover" />
-                <div className="absolute inset-0 fdark:bg-black/50 bg-white/50" />
+                <div className="absolute inset-0 dark:bg-black/50 bg-white/50" />
                 <h1 className="relative z-10 dark:text-white text-black text-4xl md:text-5xl lg:text-6xl  font-bold">
                     Our HVAC &  Engineering <span className="text-glow">Projects</span>
                 </h1>

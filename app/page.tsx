@@ -1,4 +1,5 @@
 import ContactInvite from "@/components/ContactInvite";
+import FloatingCompo from "@/components/FloatingCompo";
 import Hero from "@/components/Hero";
 import Nav2 from "@/components/Nav2";
 import Navbar from "@/components/Navbar";
@@ -33,6 +34,7 @@ export default function Home() {
       <Services />
       <Testimonials />
       <ContactInvite />
+      <FloatingCompo />
     </div>
   );
 }
