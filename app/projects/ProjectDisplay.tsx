@@ -8,25 +8,25 @@ const projects = [
         id: 1,
         title: 'Air Conditioning Installation',
         description: 'Professional installation of split, ducted, and central air conditioning systems.',
-        images: ['/assets/landing-page-2.jpg', '/assets/about-two.jpg'],
+        images: ['/assets/project1.jpg', '/assets/project1_1.jpg'],
     },
     {
         id: 2,
         title: 'Maintenance & Repair',
         description: 'Routine servicing, fault diagnosis, and repairs.',
-        images: ['/assets/landing-page-2.jpg'],
+        images: ['/assets/project2_1.jpg', '/assets/project2_2.jpg'],
     },
     {
         id: 3,
         title: 'Ventilation Systems',
         description: 'Mechanical ventilation for better indoor air quality.',
-        images: ['/assets/about-two.jpg'],
+        images: ['/assets/project3_1.jpg', '/assets/project3_2.jpg'],
     },
     {
         id: 4,
         title: 'Electrical Works',
         description: 'Safe installation and upgrading of electrical systems.',
-        images: ['/assets/landing-page-2.jpg'],
+        images: ['/assets/project4_1.jpg', '/assets/electrical-wiring-scaled.jpg'],
     },
 ]
 const ProjectDisplay = () => {
