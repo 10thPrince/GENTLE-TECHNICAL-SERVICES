@@ -58,28 +58,28 @@ const Services = () => {
       title: "Air Conditioning Installation",
       description:
         "Professional installation of split, ducted, and central air conditioning systems for residential and commercial buildings.",
-      image: "/assets/landing-page-2.jpg",
+      image: "/assets/aircondition-installer.jpg",
     },
     {
       id: 2,
       title: "Air Conditioning Maintenance & Repair",
       description:
         "Routine servicing, fault diagnosis, and repair of air conditioning systems to ensure efficiency, reliability, and long equipment life.",
-      image: "/assets/landing-page-2.jpg",
+      image: "/assets/maintainance.jpg",
     },
     {
       id: 3,
       title: "Ventilation Systems",
       description:
         "Design and installation of mechanical ventilation systems to improve indoor air quality and airflow in homes, offices, and industrial spaces.",
-      image: "/assets/landing-page-2.jpg",
+      image: "/assets/ventilation.jpg",
     },
     {
       id: 4,
       title: "Electrical Works",
       description:
         "Safe installation, upgrading, and maintenance of electrical wiring, lighting, panels, and power systems in buildings.",
-      image: "/assets/landing-page-2.jpg",
+      image: "/assets/electrical-wiring-scaled.jpg",
     },
   ]
 
@@ -88,7 +88,7 @@ const Services = () => {
       {/* Landing Section */}
       <div className="relative h-[50vh] lg:h-[70vh]">
         <Image
-          src='/assets/landing-page-2.jpg'
+          src='/assets/Air-Conditioner.jpg'
           alt="Air conditioning installation service in Rwanda"
           fill
           className="object-cover"
@@ -227,14 +227,13 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="relative h-full min-h-[400px] w-full rounded-2xl bg-gray-100 dark:bg-gray-800 overflow-hidden shadow-2xl shadow-blue-50">
+            <div className="relative h-full min-h-[400px] w-full rounded-2xl bg-gray-100 dark:bg-gray-800 overflow-hidden shadow-xl shadow-blue-50">
               <div
                 className="absolute inset-0 bg-cover bg-center hover:scale-105 transition-transform duration-1000"
 
               >
-                <Image src='/assets/landing-page-2.jpg'
-                  width={1000}
-                  height={1000}
+                <Image src='/assets/about-image.jpg'
+                  fill
                   alt="Image"
                   className="w-full h-full" />
               </div>

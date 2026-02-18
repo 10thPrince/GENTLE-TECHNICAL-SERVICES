@@ -1,4 +1,5 @@
 import { Eye, Flag, Gem, Star } from 'lucide-react'
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -55,14 +56,12 @@ const AboutClient = () => {
                   </button>
                 </div>
               </div>
-              <div className="w-full lg:w-1/2">
-                <div
-                  className="w-full bg-center bg-no-repeat bg-cover rounded-2xl aspect-[4/3] shadow-2xl shadow-blue-900/10"
-                  data-alt="Professional HVAC technician servicing an air conditioning unit on a rooftop"
-                  style={{
-                    backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuAmXXrpCnia9zCC2bEZun9T02GrLEGUeGQB0CvCPJxL2CtQwJHvHHI022PnWq5c9j1svpUqjVTtuHN5Za1LrUPTSPMXwO8F0V5xbKnbvXk8fdI15DjAP9eYsgBFHSDwwwf62s4Xlkfrb28uvA1iCkDviYB9c-X4pLpTMDPJka4Wx68J7HIPOWNr-CngeB_2Hwpr4J4qEADxobBduss4ta_gkL-RyL-NPdH_KcbR56zV1Bono64wBfcOHX0obsAtD1xF64dnf1JYoyrZ")'
-                  }}
-                ></div>
+              <div className="w-full lg:w-1/2 justify-center items-center">
+                
+                  <Image src='/assets/about-landing.jpg' width={500} height={500}
+                  alt='Professional HVAC technician servicing an air conditioning unit on a rooftop' 
+                  className=' rounded-2xl mx-auto'/>
+                
 
               </div>
             </div>
