@@ -1,13 +1,16 @@
+import Image from 'next/image'
 import React from 'react'
+import { inherits } from 'util'
 
 const Hero = () => {
   return (
     <section className="relative bg-slate-200 dark:bg-slate-900 h-[85vh] min-h-150 flex items-center">
         <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-linear-to-r from-slate-200 via-slate-200/80 to-slate-200/40 dark:from-slate-900 dark:via-slate-900/80 dark:to-slate-900/40 z-10"></div>
-            <img alt="HVAC Technician" className="w-full h-full object-cover object-center"
+            <Image alt="HVAC Technician" className="w-full h-full object-cover object-center"
                 data-alt="Technician checking an air conditioning unit on a wall"
-                src="/assets/landing-page-2.jpg" />
+                fill
+                src="/assets/Landing-Image.webp" />
         </div>
         <div className="relative z-10 w-full max-w-300 mx-auto px-4 md:px-10">
             <div className="max-w-3xl flex flex-col gap-8">

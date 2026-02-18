@@ -9,10 +9,10 @@ const ContactInvite = () => {
         <div className="relative h-[80vh] flex items-center justify-center text-center bg-cover bg-center overflow-hidden">
       {/* Background Image */}
       <Image
-        src="/assets/landing-page-2.jpg"
+        src="/assets/service-landing.jpg"
         alt="Contact Background"
         fill
-        className="object-cover absolute inset-0"
+        className="object-cover  absolute inset-0"
       />
 
       {/* Overlay */}
