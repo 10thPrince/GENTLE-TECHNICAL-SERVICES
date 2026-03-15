@@ -1,4 +1,5 @@
-import { AirVent, ArrowBigRight, ArrowRight, Droplet, FunnelIcon, Pipette, Snowflake, Wind } from 'lucide-react'
+import { AirVent, ArrowBigRight, ArrowRight, Droplet, FunnelIcon, Pipette, PlugZap, Shield, Snowflake, Wind } from 'lucide-react'
+import Image from 'next/image'
 import React from 'react'
 
 const Services = () => {
@@ -21,7 +22,7 @@ const Services = () => {
                             <div
                                 className="absolute inset-0 bg-primary/20 group-hover:bg-primary/0 transition-colors z-10 mix-blend-multiply">
                             </div>
-                            <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            <img className="w-full h-full object-cover "
                                 data-alt="Split air conditioner unit on a white wall"
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZgp9ESyOsbR-HnG7-ti6NHyUPuFtJ-ShW_Igly4v0p_F2Wtl35wPh0Ij7vrZF9OnH9fo67FCahHVNpglkeX9zcpYoJTwRGsNOHSU0B895Znvk-RgzLAlBU1mXO56JlbH1C7g6YexMXLlZ7HFwWgE6TUn_rEX3om7RFC0nmhTm8w2V5ipD4vzSOvvrfNQ_OdVypjLo0lUrWHl6fQ5zjKr12Si4lcxxQPXOXCvXxHoMwpKXSiVP_annOQDSyiq-PuiSkZiwgLaBJuTf" />
                             <div
@@ -53,26 +54,26 @@ const Services = () => {
                             <div
                                 className="absolute inset-0 bg-primary/20 group-hover:bg-primary/0 transition-colors z-10 mix-blend-multiply">
                             </div>
-                            <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                                data-alt="Industrial ceiling ventilation ducts in a factory"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuByWjLCXk_Jw6QWOUOvkknwjsmURoKP-h4YlffEXCUY_6fyaESnsC5uMUiSDCPF5-Zgm04M4Sn1a4NPA0hX81BmPWKDQtjK-xnZzbF1mxUnttO_2NAkm7KSm34Rw8qt66rxHBRnm0eJAez7eqiiuz2zle4T4R_6uQFLILp1RzRgMo-kaJl3oxq3VwQR3wM-iS-T4Uk8sai2vhZHghRtMObzt0NBpuBUUcuVoknmRVcnLHUia4eRUdiuvRU8pUUpqMVIKsy0zZnmX0gJ" />
+                            <Image src='/assets/gentle-camera-1.webp'
+                                fill
+                                alt="CCTV Camera Image"
+                                className="w-full h-full" />
                             <div
                                 className="absolute bottom-4 left-4 z-20 bg-white/90 backdrop-blur-sm p-3 rounded-2xl text-primary shadow-lg">
                                 <span className="material-symbols-outlined">
-                                    <Wind />
+                                    <Shield />
                                 </span>
                             </div>
                         </div>
                         <div className="p-8 flex flex-col flex-1">
                             <h3
                                 className="text-2xl font-bold font-accent text-slate-900 dark:text-white mb-3 group-hover:text-primary transition-colors">
-                                Industrial Ventilation</h3>
+                                CCTV surveillance</h3>
                             <p className="text-slate-500 dark:text-slate-400 text-base leading-relaxed mb-6 flex-1">
-                                Custom ventilation solutions for factories, warehouses, and commercial kitchens to ensure
-                                safe air quality.
+                                Custom CCTV surveillance solutions for homes to ensure family safety, property protection, and peace of mind.
                             </p>
                             <a className="inline-flex gap-2 items-center text-primary font-bold text-sm group/link" href="/contact">
-                                Learn more 
+                                Learn more
                                 <div className='flex items-center'>
                                     <ArrowRight size={20} className='text-sm ml-1 group-hover/link:translate-x-1 transition-transform' />
                                 </div>
@@ -85,26 +86,26 @@ const Services = () => {
                             <div
                                 className="absolute inset-0 bg-primary/20 group-hover:bg-primary/0 transition-colors z-10 mix-blend-multiply">
                             </div>
-                            <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                                data-alt="Close up of pipes and valves in a mechanical room"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvJpTn9q41cFTI_Z1HI0iHOCBnD4cjljHYksBmjKnlFELYQUrUFU4t72yJ_N2HvAPaEzdZtNdxQfQqF_YspQAYGTDrZtsRXo7iPhkolMZrROR32z8sVHWVIy1Zja63G7FAY8lhjIyYnEnhx1VsopzQedh4xAZGMbd1SXvl_q-rWTKwwVU-1JvUgmqhqp9lIq9MBKvNgbqqEnhjq3ecL7FYesWGEmY7J7rNX7N0gfBShnCK1KAn2ZC92G-XVu4Rz2BYp5z-SXJp6jWU" />
+                            <Image  src='/assets/gentle-electric-1.webp'
+                                fill
+                                alt='Electric Work'
+                                className='w-full h-full'/>
                             <div
                                 className="absolute bottom-4 left-4 z-20 bg-white/90 backdrop-blur-sm p-3 rounded-2xl text-primary shadow-lg">
                                 <span className="material-symbols-outlined">
-                                    <Droplet />
+                                    <PlugZap />
                                 </span>
                             </div>
                         </div>
                         <div className="p-8 flex flex-col flex-1">
                             <h3
                                 className="text-2xl font-bold font-accent text-slate-900 dark:text-white mb-3 group-hover:text-primary transition-colors">
-                                Plumbing &amp; Electrical</h3>
+                                Electrical Solutions</h3>
                             <p className="text-slate-500 dark:text-slate-400 text-base leading-relaxed mb-6 flex-1">
-                                Comprehensive support for building systems including pipe repairs, water heaters, and
-                                electrical control panels.
+                                Custom electrical solutions for homes to ensure reliable power distribution, safety, and modern energy management.
                             </p>
                             <a className="inline-flex gap-2 items-center text-primary font-bold text-sm group/link" href="/contact">
-                                Learn more 
+                                Learn more
                                 <div className='flex items-center'>
                                     <ArrowRight size={20} className='text-sm ml-1 group-hover/link:translate-x-1 transition-transform' />
                                 </div>

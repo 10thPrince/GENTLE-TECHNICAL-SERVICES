@@ -4,7 +4,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 const FloatingCompo = () => {
     return (
         <div
-            className="fixed bottom-6 right-6 z-50 flex flex-col items-center  bg-green-500/80 backdrop-blur-md p-1 md:p-2 rounded-full shadow-lg"
+            className="fixed bottom-6 right-6 z-50 flex flex-col items-center  bg-green-500/80 backdrop-blur-md p-3 md:p-4 rounded-full shadow-lg"
         >
             {/* Phone */}
             <a
@@ -13,7 +13,7 @@ const FloatingCompo = () => {
                 rel="noreferrer"
                 className=" text-gray-300 hover:text-primary transition"
             >
-                <FaWhatsapp size={28} />
+                <FaWhatsapp size={40} />
             </a>
         </div>
     )
