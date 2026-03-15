@@ -8,7 +8,7 @@ const Qualities = () => {
             className="max-w-[1200px] mx-auto bg-white dark:bg-slate-800 rounded-2xl shadow-xl border border-slate-100 dark:border-slate-700 p-8 md:p-12">
             <div
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 divide-y md:divide-y-0 md:divide-x divide-slate-100 dark:divide-slate-700">
-                <div className="flex flex-col items-center text-center gap-3 pt-4 md:pt-0 px-4">
+                <div className="flex flex-col items-center text-center gap-3 py-4 md:pt-0 px-4">
                     <div
                         className="size-14 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0 mb-2">
                         <span className="text-3xl">
@@ -22,7 +22,7 @@ const Qualities = () => {
                             experience.</p>
                     </div>
                 </div>
-                <div className="flex flex-col items-center text-center gap-3 pt-4 md:pt-0 px-4">
+                <div className="flex flex-col items-center text-center gap-3 py-4 md:pt-0 px-4">
                     <div
                         className="size-14 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0 mb-2">
                         <span className="text-3xl">
@@ -34,7 +34,7 @@ const Qualities = () => {
                         <p className="text-sm text-slate-500 dark:text-slate-400">Quick turnaround for emergencies.</p>
                     </div>
                 </div>
-                <div className="flex flex-col items-center text-center gap-3 pt-4 md:pt-0 px-4">
+                <div className="flex flex-col items-center text-center gap-3 py-4 md:pt-0 px-4">
                     <div
                         className="size-14 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0 mb-2">
                         <span className="text-3xl">
@@ -46,7 +46,7 @@ const Qualities = () => {
                         <p className="text-sm text-slate-500 dark:text-slate-400">Genuine and durable spare parts.</p>
                     </div>
                 </div>
-                <div className="flex flex-col items-center text-center gap-3 pt-4 md:pt-0 px-4">
+                <div className="flex flex-col items-center text-center gap-3 py-4 md:pt-0 px-4">
                     <div
                         className="size-14 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0 mb-2">
                         <span className="material-symbols-outlined text-3xl">

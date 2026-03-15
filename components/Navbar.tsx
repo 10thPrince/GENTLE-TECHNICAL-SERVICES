@@ -25,9 +25,7 @@ const Navbar = () => {
                 </Link>
                 {/* Navgations */}
                 <ul className='hidden lg:flex items-center gap-10'>
-                    <Link href='/' >
-                        <li className='text-slate-700 dark:text-slate-200 hover:text-primary transition-colors font-bold'>Home</li>
-                    </Link>
+                    
                     <Link href='/services'>
                         <li className='text-slate-700 dark:text-slate-200 hover:text-primary transition-colors font-bold'>Services</li>
                     </Link>
@@ -49,10 +47,10 @@ const Navbar = () => {
                     </Link>
                 </div>
 
-                <div className='lg:hidden text-slate-700 dark:text-slate-200 items-center'
+                <div className='lg:hidden text-slate-700 flex items-center dark:text-slate-200 '
                 onClick={() => setMenuOpen(!menuOpen)}>
-                    <div className='text-lg font-bold h-fit cursor-pointer items-center justify-center'>
-                        <Menu />
+                    <div className='font-bold h-fit cursor-pointer '>
+                        <Menu size={30}/>
                     </div>
                 </div>
 
@@ -62,19 +60,17 @@ const Navbar = () => {
                 menuOpen && (
                     <div className='lg:hidden w-full bg-slate-900 border-t border-slate-700'>
                         <div className='flex flex-col gap-6 px-6 py-6'>
-                            <Link href={'/'} className='text-slate-700 dark:text-slate-200 font-bold hover:text-primary'>
-                                Home
-                            </Link>
-                            <Link href={'/services'} className='text-slate-700 dark:text-slate-200 font-bold hover:text-primary'>
+                            
+                            <Link href={'/services'} onClick={() => setMenuOpen(false)} className='text-slate-700 text-center dark:text-slate-200 font-bold hover:text-primary'>
                                 Services
                             </Link>
-                            <Link href={'/about'} className='text-slate-700 dark:text-slate-200 font-bold hover:text-primary'>
+                            <Link href={'/about'} onClick={() => setMenuOpen(false)} className='text-slate-700 text-center dark:text-slate-200 font-bold hover:text-primary'>
                                 About Us
                             </Link>
-                            <Link href={'/projects'} className='text-slate-700 dark:text-slate-200 font-bold hover:text-primary'>
+                            <Link href={'/projects'} onClick={() => setMenuOpen(false)} className='text-slate-700 text-center dark:text-slate-200 font-bold hover:text-primary'>
                                 Our Projects
                             </Link>
-                            <Link href={'/contact'} className='text-slate-200 bg-primary text-center font-bold py-4 rounded-full'>
+                            <Link href={'/contact'} onClick={() => setMenuOpen(false)} className='text-slate-200 text-center bg-primary text-center font-bold py-4 rounded-full'>
                                 Contact Us
                             </Link>
                         </div>
