@@ -3,6 +3,7 @@ import Image from "next/image"
 import { ShieldCheck, Headset, MapPin, ArrowRight } from "lucide-react"
 import Link from "next/link"
 import type { Metadata } from "next";
+import FloatingCompo from "@/components/FloatingCompo";
 
 export const metadata: Metadata = {
   title: "Technical Services in Rwanda | HVAC, Electrical & Ventilation",
@@ -69,13 +70,20 @@ const Services = () => {
     },
     {
       id: 3,
-      title: "Ventilation Systems",
+      title: "CCTV Surveillance",
       description:
-        "Design and installation of mechanical ventilation systems to improve indoor air quality and airflow in homes, offices, and industrial spaces.",
-      image: "/assets/ventilation.jpg",
+        "Personalized CCTV solutions for your home — safeguarding your family, belongings, and home with reliable 24/7 visibility.",
+      image: "/assets/gentle-camera-2.jpg",
     },
     {
       id: 4,
+      title: "Fire suppression Installation and Maintenance",
+      description:
+        "Personalized fire suppression systems for homes to guarantee quick activation, effective containment, and total family protection.",
+      image: "/assets/gentle-fire-3.jpg",
+    },
+    {
+      id: 5,
       title: "Electrical Works",
       description:
         "Safe installation, upgrading, and maintenance of electrical wiring, lighting, panels, and power systems in buildings.",
@@ -85,6 +93,7 @@ const Services = () => {
 
   return (
     <div className="flex flex-col dark:bg-slate-900">
+      <FloatingCompo />
       {/* Landing Section */}
       <div className="relative h-[50vh] lg:h-[70vh]">
         <Image

@@ -1,3 +1,4 @@
+import FloatingCompo from '@/components/FloatingCompo'
 import { Eye, Flag, Gem, Star } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -26,6 +27,7 @@ const HalfStar = () => (
 const AboutClient = () => {
   return (
     <div>
+      <FloatingCompo />
       <div
         className="px-4 md:px-20 lg:px-40 flex flex-1 justify-center py-8 lg:py-12 bg-[#ededed] dark:bg-background-dark">
         <div className="layout-content-container flex flex-col max-w-[1200px] flex-1">

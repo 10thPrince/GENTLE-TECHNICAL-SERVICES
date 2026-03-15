@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import ProjectDisplay from './ProjectDisplay'
 import { Metadata } from 'next';
+import FloatingCompo from '@/components/FloatingCompo';
 
 export const metadata: Metadata = {
   title: "HVAC & Engineering Projects in Rwanda | Gentle Technical Services",
@@ -52,6 +53,7 @@ const Projects = () => {
 
     return (
         <div className="bg-white dark:bg-slate-900">
+          <FloatingCompo />
             {/* Hero */}
             <section className="relative h-[50vh] lg:h-[70vh] flex items-center justify-center text-center">
                 <Image src="/assets/project-landing.jpg" alt="Projects" fill className="object-cover" />
