@@ -29,7 +29,7 @@ const ContactDetails = () => {
                   <h3 className="text-lg font-bold text-gray-900 dark:text-white">Phone Support</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-300 mb-1">24/7 Hotline for emergencies</p>
                   <a className="text-base font-bold text-blue-600 hover:underline" href="tel:+250788123456">
-                    +250 788 123 456
+                    +250 781 884 868
                   </a>
                 </div>
               </div>
@@ -42,7 +42,7 @@ const ContactDetails = () => {
                 <div className="flex flex-col">
                   <h3 className="text-lg font-bold text-gray-900 dark:text-white">WhatsApp</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-300 mb-1">Chat directly with an expert</p>
-                  <a className="text-base font-bold text-green-600 hover:underline" href="#">Start Chat</a>
+                  <a className="text-base font-bold text-green-600 hover:underline" href="https://wa.me/250781884868" target='_black'>Start Chat</a>
                 </div>
               </div>
 
@@ -54,8 +54,8 @@ const ContactDetails = () => {
                 <div className="flex flex-col">
                   <h3 className="text-lg font-bold text-gray-900 dark:text-white">Email Us</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-300 mb-1">For general inquiries & quotes</p>
-                  <a className="text-base font-medium text-gray-900 dark:text-gray-200 hover:text-blue-600" href="mailto:support@gentletechnical.rw">
-                    support@gentletechnical.rw
+                  <a className="text-base font-medium text-gray-900 dark:text-gray-200 hover:text-blue-600" href="mailto:cyusapatrick229@gmail.com">
+                    cyusapatrick229@gmail.com
                   </a>
                 </div>
               </div>
@@ -72,7 +72,7 @@ const ContactDetails = () => {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+              {/* <div className="flex items-start gap-4 rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
 
                 <div className="flex flex-col">
                   <h3 className="text-lg font-bold text-gray-900 dark:text-white">Follow Us</h3>
@@ -89,7 +89,7 @@ const ContactDetails = () => {
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
 
 
@@ -129,7 +129,7 @@ const ContactDetails = () => {
         </div>
 
         {/* Map Section */}
-        <div className="mt-16 flex w-full flex-col gap-6">
+        {/* <div className="mt-16 flex w-full flex-col gap-6">
           <div className="flex items-center gap-3">
             <div className="h-10 w-2 rounded-full bg-blue-600 dark:bg-blue-400"></div>
             <h3 className="text-3xl font-bold text-gray-900 dark:text-white">Find us on the Map</h3>
@@ -144,7 +144,7 @@ const ContactDetails = () => {
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1006.0487285630024!2d30.132449655126457!3d-1.9181693759711749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca1fe231ba7f3%3A0xe2f963c26441ca8e!2sMASIZI%20SUPERMARKET!5e0!3m2!1sen!2srw!4v1767183557362!5m2!1sen!2srw" width="100%" height="100%" style={{border:0}}  loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </main>
   );
