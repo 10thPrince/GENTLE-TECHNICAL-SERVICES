@@ -1,5 +1,6 @@
 import { Facebook, Instagram, LocateIcon, LocationEdit, Mail, MapPinIcon, Phone, Twitter, X } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -34,23 +35,29 @@ const Footer = () => {
                 <div className="flex flex-col gap-6">
                     <h4 className="text-black dark:text-white font-bold font-accent text-lg">Quick Links</h4>
                     <div className="flex flex-col gap-3">
-                        <a className="text-sm hover:text-primary transition-colors flex items-center gap-2" href="#"><span
-                                className="w-1.5 h-1.5 rounded-full bg-slate-600"></span> Home</a>
-                        <a className="text-sm hover:text-primary transition-colors flex items-center gap-2" href="#"><span
-                                className="w-1.5 h-1.5 rounded-full bg-slate-600"></span> About Us</a>
-                        <a className="text-sm hover:text-primary transition-colors flex items-center gap-2" href="#"><span
-                                className="w-1.5 h-1.5 rounded-full bg-slate-600"></span> Services</a>
-                        <a className="text-sm hover:text-primary transition-colors flex items-center gap-2" href="#"><span
-                                className="w-1.5 h-1.5 rounded-full bg-slate-600"></span> Contact</a>
+                        <Link href={'/'} className='text-sm hover:text-primary transition-colors flex items-center gap-2'>
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-600"></span> Home
+                        </Link>
+                        <Link href={'/about'} className='text-sm hover:text-primary transition-colors flex items-center gap-2'>
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-600"></span> About Us
+                        </Link>
+                        <Link href={'/services'} className='text-sm hover:text-primary transition-colors flex items-center gap-2'>
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-600"></span> Services
+                        </Link>
+                        <Link href={'/contact'} className='text-sm hover:text-primary transition-colors flex items-center gap-2'>
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-600"></span> Contact
+                        </Link>
+                        
                     </div>
                 </div>
                 <div className="flex flex-col gap-6">
                     <h4 className="text-black dark:text-white font-bold font-accent text-lg">Services</h4>
                     <div className="flex flex-col gap-3">
-                        <a className="text-sm hover:text-primary transition-colors" href="#">AC Installation</a>
+                        <Link className="text-sm hover:text-primary transition-colors" href="/services">AC Installation</Link>
                         {/* <a className="text-sm hover:text-primary transition-colors" href="#">Fire suppression</a> */}
-                        <a className="text-sm hover:text-primary transition-colors" href="#">CCTV Surveillance</a>
-                        <a className="text-sm hover:text-primary transition-colors" href="#">Electrical Works</a>
+                        <Link className="text-sm hover:text-primary transition-colors" href="/services">CCTV Surveillance</Link>
+                        <Link className="text-sm hover:text-primary transition-colors" href="/services">Electrical Works</Link>
+                        <Link className="text-sm hover:text-primary transition-colors" href="/services">Fire Suppression</Link>
                     </div>
                 </div>
                 <div className="flex flex-col gap-6">

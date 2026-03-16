@@ -56,7 +56,7 @@ const Services = () => {
   const services = [
     {
       id: 1,
-      title: "Air Conditioning Installation",
+      title: "Air Conditioning Installation & Repair",
       description:
         "Professional installation of split, ducted, and central air conditioning systems for residential and commercial buildings. Routine servicing, fault diagnosis, and repair of air conditioning systems to ensure efficiency, reliability, and long equipment life.",
       image: "/assets/aircondition-installer.jpg",
@@ -99,7 +99,7 @@ const Services = () => {
         />
         <div className="absolute inset-0 bg-slate-200/60 dark:bg-slate-900/70 "></div>
         <div className="relative flex flex-col z-10 justify-center h-full items-center gap-4 text-black dark:text-white lg:text-5xl font-bold">
-          <h1 className="flex flex-col md:flex-row gap-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+          <h1 className="flex flex-col md:flex-row gap-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
             <span className="mx-auto">Take a look at </span>
             <span className="text-primary mx-auto">Our services</span>
           </h1>
