@@ -58,32 +58,26 @@ const Services = () => {
       id: 1,
       title: "Air Conditioning Installation",
       description:
-        "Professional installation of split, ducted, and central air conditioning systems for residential and commercial buildings.",
+        "Professional installation of split, ducted, and central air conditioning systems for residential and commercial buildings. Routine servicing, fault diagnosis, and repair of air conditioning systems to ensure efficiency, reliability, and long equipment life.",
       image: "/assets/aircondition-installer.jpg",
     },
+    
     {
       id: 2,
-      title: "Air Conditioning Maintenance & Repair",
-      description:
-        "Routine servicing, fault diagnosis, and repair of air conditioning systems to ensure efficiency, reliability, and long equipment life.",
-      image: "/assets/maintainance.jpg",
-    },
-    {
-      id: 3,
       title: "CCTV Surveillance",
       description:
         "Personalized CCTV solutions for your home — safeguarding your family, belongings, and home with reliable 24/7 visibility.",
       image: "/assets/gentle-camera-2.jpg",
     },
     {
-      id: 4,
+      id: 3,
       title: "Fire suppression Installation and Maintenance",
       description:
         "Personalized fire suppression systems for homes to guarantee quick activation, effective containment, and total family protection.",
       image: "/assets/gentle-fire-3.jpg",
     },
     {
-      id: 5,
+      id: 4,
       title: "Electrical Works",
       description:
         "Safe installation, upgrading, and maintenance of electrical wiring, lighting, panels, and power systems in buildings.",
@@ -105,14 +99,14 @@ const Services = () => {
         />
         <div className="absolute inset-0 bg-slate-200/60 dark:bg-slate-900/70 "></div>
         <div className="relative flex flex-col z-10 justify-center h-full items-center gap-4 text-black dark:text-white lg:text-5xl font-bold">
-          <h1 className="flex gap-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-            <span>Expert Technical </span>
-            <span className="text-primary">Services In Rwanda</span>
+          <h1 className="flex flex-col md:flex-row gap-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+            <span className="mx-auto">Take a look at </span>
+            <span className="text-primary mx-auto">Our services</span>
           </h1>
-          <p className="text-lg w-[80%] md:w-[50%] font-semibold text-slate-700 dark:text-slate-300 text-center tracking-widest">
+          {/* <p className="text-lg w-[80%] md:w-[50%] font-semibold text-slate-700 dark:text-slate-300 text-center tracking-widest">
             Providing top-tier HVAC, electrical and solar for homes, offices and
             Industries across Rwanda.
-          </p>
+          </p> */}
         </div>
       </div>
 

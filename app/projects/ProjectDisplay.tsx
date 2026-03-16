@@ -18,15 +18,21 @@ const projects = [
     },
     {
         id: 3,
-        title: 'Ventilation Systems',
+        title: 'CCTV Surveillance',
         description: 'Mechanical ventilation for better indoor air quality.',
-        images: ['/assets/project3_1.jpg', '/assets/project3_2.jpg'],
+        images: ['/assets/gentle-camera-2.jpg', '/assets/gentle-camera-1.webp'],
     },
     {
         id: 4,
         title: 'Electrical Works',
         description: 'Safe installation and upgrading of electrical systems.',
         images: ['/assets/project4_1.jpg', '/assets/electrical-wiring-scaled.jpg'],
+    },
+    {
+        id: 5,
+        title: 'Fire suppression',
+        description: 'Safe installation and upgrading of fire suppression systems in home and businesses.',
+        images: [ '/assets/gentle-fire-3.jpg', '/assets/gentle-fire-1.png', '/assets/gentle-fire-4.jpg'],
     },
 ]
 const ProjectDisplay = () => {

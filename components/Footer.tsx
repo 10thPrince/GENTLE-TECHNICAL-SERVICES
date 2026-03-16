@@ -16,7 +16,7 @@ const Footer = () => {
                         Leading provider of HVAC and technical facility solutions in Rwanda. Dedicated to comfort and
                         reliability.
                     </p>
-                    <div className="flex gap-4">
+                    {/* <div className="flex gap-4">
                         <a className="size-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
                             href="#">
                             <Facebook />
@@ -29,7 +29,7 @@ const Footer = () => {
                             href="#">
                             <Twitter />
                         </a>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="flex flex-col gap-6">
                     <h4 className="text-black dark:text-white font-bold font-accent text-lg">Quick Links</h4>

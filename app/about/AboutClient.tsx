@@ -209,7 +209,7 @@ const AboutClient = () => {
         <div className="px-4 md:px-20 flex flex-col items-center text-center gap-8">
           <h2 className="text-white text-3xl md:text-5xl font-extrabold max-w-3xl font-display leading-tight">Ready to
             Upgrade Your Comfort?</h2>
-          <p className="text-blue-50 text-xl max-w-2xl font-body">Get a free inspection and quote for your home or
+          <p className="text-blue-50 text-xl max-w-2xl font-body">Get an inspection for your home or
             business today.</p>
           <div className="flex flex-col sm:flex-row gap-5 mt-4">
             
