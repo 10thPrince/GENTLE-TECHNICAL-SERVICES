@@ -48,9 +48,9 @@ const Footer = () => {
                     <h4 className="text-black dark:text-white font-bold font-accent text-lg">Services</h4>
                     <div className="flex flex-col gap-3">
                         <a className="text-sm hover:text-primary transition-colors" href="#">AC Installation</a>
-                        <a className="text-sm hover:text-primary transition-colors" href="#">Repair &amp; Maintenance</a>
-                        <a className="text-sm hover:text-primary transition-colors" href="#">Ventilation Systems</a>
-                        <a className="text-sm hover:text-primary transition-colors" href="#">Plumbing Works</a>
+                        {/* <a className="text-sm hover:text-primary transition-colors" href="#">Fire suppression</a> */}
+                        <a className="text-sm hover:text-primary transition-colors" href="#">CCTV Surveillance</a>
+                        <a className="text-sm hover:text-primary transition-colors" href="#">Electrical Works</a>
                     </div>
                 </div>
                 <div className="flex flex-col gap-6">
@@ -61,11 +61,11 @@ const Footer = () => {
                     </div>
                     <div className="flex items-center gap-3 text-sm">
                         <Phone className='text-primary'/>
-                        <span className="text-slate-800 dark:text-slate-400">+250 788 123 456</span>
+                        <span className="text-slate-800 dark:text-slate-400">+250 781 884 868</span>
                     </div>
                     <div className="flex items-center gap-3 text-sm">
                         <Mail className='text-primary'/>
-                        <span className="text-slate-800 dark:text-slate-400">info@gentletech.rw</span>
+                        <span className="text-slate-800 dark:text-slate-400">cyusapatrick229@gmail.com</span>
                     </div>
                 </div>
             </div>
