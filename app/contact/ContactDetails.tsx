@@ -119,23 +119,23 @@ const ContactDetails = () => {
               <div className="flex flex-col gap-6 md:flex-row">
                 <label className="flex flex-1 flex-col gap-2">
                   <span className="text-sm font-bold text-gray-900 dark:text-gray-200">Your Name</span>
-                  <input className="h-14 w-full rounded-xl border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white px-4 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-100 dark:focus:ring-blue-500 transition-colors duration-300" placeholder="Enter your full name" type="text" />
+                  <input name='name' value={name} onChange={(e) => setName(e.target.value) } className="h-14 w-full rounded-xl border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white px-4 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-100 dark:focus:ring-blue-500 transition-colors duration-300" placeholder="Enter your full name" type="text" />
                 </label>
                 <label className="flex flex-1 flex-col gap-2">
                   <span className="text-sm font-bold text-gray-900 dark:text-gray-200">Phone Number</span>
-                  <input className="h-14 w-full rounded-xl border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white px-4 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-100 dark:focus:ring-blue-500 transition-colors duration-300" placeholder="+250 78..." type="tel" />
+                  <input name='number' value={number} onChange={(e) => setNumber(e.target.value)} className="h-14 w-full rounded-xl border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white px-4 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-100 dark:focus:ring-blue-500 transition-colors duration-300" placeholder="+250 78..." type="tel" />
                 </label>
               </div>
               <label className="flex flex-col gap-2">
                 <span className="text-sm font-bold text-gray-900 dark:text-gray-200">Email Address</span>
-                <input className="h-14 w-full rounded-xl border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white px-4 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-100 dark:focus:ring-blue-500 transition-colors duration-300" placeholder="you@example.com" type="email" />
+                <input name='email' value={email} onChange={(e) => setEmail(e.target.value)} className="h-14 w-full rounded-xl border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white px-4 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-100 dark:focus:ring-blue-500 transition-colors duration-300" placeholder="you@example.com" type="email" />
               </label>
 
               <label className="flex flex-col gap-2">
                 <span className="text-sm font-bold text-gray-900 dark:text-gray-200">How can we help?</span>
-                <textarea className="min-h-[160px] w-full resize-y rounded-xl border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white p-4 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-100 dark:focus:ring-blue-500 transition-colors duration-300" placeholder="Describe your issue or request here..."></textarea>
+                <textarea name='message' value={message} onChange={(e) => setMessage(e.target.value)} className="min-h-[160px] w-full resize-y rounded-xl border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white p-4 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-100 dark:focus:ring-blue-500 transition-colors duration-300" placeholder="Describe your issue or request here..."></textarea>
               </label>
-              <button className="mt-4 flex h-14 w-full items-center justify-center rounded-full bg-blue-600 dark:bg-blue-700 text-white hover:bg-blue-700 dark:hover:bg-blue-600 transition-all font-bold text-lg shadow-md">
+              <button type='submit' className="mt-4 flex h-14 w-full items-center justify-center rounded-full bg-blue-600 dark:bg-blue-700 text-white hover:bg-blue-700 dark:hover:bg-blue-600 transition-all font-bold text-lg shadow-md">
                 Send Message
               </button>
             </form>
