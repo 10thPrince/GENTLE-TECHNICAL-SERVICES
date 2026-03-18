@@ -1,8 +1,22 @@
+"use client"
+
 import { ChevronDown, Facebook, Instagram, Mail, MapPin, Phone, PinIcon, SparklesIcon, Twitter } from 'lucide-react';
-import React from 'react';
+import React, { useState } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 
 const ContactDetails = () => {
+  const [name, setName] = useState('');
+  const [number, setNumber] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = () => {
+    try{
+
+    }catch(err){
+      
+    }
+  }
   return (
     <main className="flex flex-1 flex-col items-center px-4 py-12 md:px-10 lg:px-40 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="layout-content-container flex w-full max-w-[1200px] flex-col flex-1">
@@ -54,8 +68,8 @@ const ContactDetails = () => {
                 <div className="flex flex-col">
                   <h3 className="text-lg font-bold text-gray-900 dark:text-white">Email Us</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-300 mb-1">For general inquiries & quotes</p>
-                  <a className="text-base font-medium text-gray-900 dark:text-gray-200 hover:text-blue-600" href="mailto:cyusapatrick229@gmail.com">
-                    cyusapatrick229@gmail.com
+                  <a className="text-base font-medium text-gray-900 dark:text-gray-200 hover:text-blue-600" href="mailto:cyusa@gentletechnical.com">
+                    cyusa@gentletechnical.com
                   </a>
                 </div>
               </div>
