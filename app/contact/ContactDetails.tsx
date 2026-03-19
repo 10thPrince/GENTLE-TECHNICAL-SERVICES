@@ -2,26 +2,84 @@
 
 import { ChevronDown, Facebook, Instagram, Mail, MapPin, Phone, PinIcon, SparklesIcon, Twitter } from 'lucide-react';
 import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
 import { FaWhatsapp } from 'react-icons/fa';
+
+type FormValues = {
+    name: string;
+    email: string;
+    message: string;
+};
 
 const ContactDetails = () => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(false);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: {errors},
+  } = useForm<FormValues>();
 
-  const handleSubmit = () => {
-    try{
 
-    }catch(err){
-      
+  const onnSubmit = async (data :FormValues ) => {
+    setLoading(true);
+    // e.preventDefault();
+
+    const payload = {
+      ...data,
+      access_key: '4b6179bf-2b53-4511-8b7b-694454c60655'
     }
-  }
+
+    try {
+
+      // const formData = new FormData();
+
+      // formData.append("access_key", "4b6179bf-2b53-4511-8b7b-694454c60655");
+      // formData.append("name", name);
+      // formData.append("phone", number);
+      // formData.append("email", email);
+      // formData.append("message", message);
+      // formData.append("subject", "New Contact Message");
+
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const json = await res.json();
+
+      if (json.success) {
+        // setLoading(false);
+        alert("Message sent successfully!");
+
+        // reset form
+        // reset();
+      } else {
+        // setLoading(false);
+        // console.error(data);
+        alert("Failed to send message.");
+      }
+
+    } catch (err) {
+      
+      alert("Something went wrong.");
+    }finally{
+      setLoading(false)
+    }
+  };
   return (
     <main className="flex flex-1 flex-col items-center px-4 py-12 md:px-10 lg:px-40 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="layout-content-container flex w-full max-w-[1200px] flex-col flex-1">
         <div className="mb-10 flex flex-col items-center text-center">
-          
+
           <h1 className="text-gray-900 dark:text-white text-5xl font-bold leading-tight tracking-tight md:text-6xl">
             Get in Touch
           </h1>
@@ -115,28 +173,48 @@ const ContactDetails = () => {
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Send us a Message</h2>
               <p className="mt-2 text-sm text-gray-500 dark:text-gray-300">Fill out the form below and we'll get back to you within 2 hours.</p>
             </div>
-            <form className="flex flex-col gap-6">
+            <form onSubmit={handleSubmit(onnSubmit)} className="flex flex-col gap-6">
               <div className="flex flex-col gap-6 md:flex-row">
                 <label className="flex flex-1 flex-col gap-2">
                   <span className="text-sm font-bold text-gray-900 dark:text-gray-200">Your Name</span>
-                  <input name='name' value={name} onChange={(e) => setName(e.target.value) } className="h-14 w-full rounded-xl border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white px-4 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-100 dark:focus:ring-blue-500 transition-colors duration-300" placeholder="Enter your full name" type="text" />
+                  <input 
+                    {...register("name", { required: "Name is required" })}
+                    className="h-14 w-full rounded-xl border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white px-4 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-100 dark:focus:ring-blue-500 transition-colors duration-300" 
+                    placeholder="Enter your full name" 
+                    type="text" />
+                    {errors.name && <p className="text-red-500 text-sm">{errors.name.message}</p>}
                 </label>
-                <label className="flex flex-1 flex-col gap-2">
+                {/* <label className="flex flex-1 flex-col gap-2">
                   <span className="text-sm font-bold text-gray-900 dark:text-gray-200">Phone Number</span>
-                  <input name='number' value={number} onChange={(e) => setNumber(e.target.value)} className="h-14 w-full rounded-xl border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white px-4 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-100 dark:focus:ring-blue-500 transition-colors duration-300" placeholder="+250 78..." type="tel" />
-                </label>
+                  <input 
+                    className="h-14 w-full rounded-xl border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white px-4 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-100 dark:focus:ring-blue-500 transition-colors duration-300" 
+                    placeholder="+250 78..." 
+                    type="tel" />
+                </label> */}
               </div>
               <label className="flex flex-col gap-2">
                 <span className="text-sm font-bold text-gray-900 dark:text-gray-200">Email Address</span>
-                <input name='email' value={email} onChange={(e) => setEmail(e.target.value)} className="h-14 w-full rounded-xl border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white px-4 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-100 dark:focus:ring-blue-500 transition-colors duration-300" placeholder="you@example.com" type="email" />
+                <input 
+                  {...register("email", {
+                        required: "Email is required",
+                        pattern: { value: /^\S+@\S+$/, message: "Invalid email" },
+                    })}
+                  className="h-14 w-full rounded-xl border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white px-4 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-100 dark:focus:ring-blue-500 transition-colors duration-300" 
+                  placeholder="you@example.com" 
+                  />
+                  {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
               </label>
 
               <label className="flex flex-col gap-2">
                 <span className="text-sm font-bold text-gray-900 dark:text-gray-200">How can we help?</span>
-                <textarea name='message' value={message} onChange={(e) => setMessage(e.target.value)} className="min-h-[160px] w-full resize-y rounded-xl border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white p-4 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-100 dark:focus:ring-blue-500 transition-colors duration-300" placeholder="Describe your issue or request here..."></textarea>
+                <textarea
+                  {...register("message", { required: "Message is required", minLength: { value: 10, message: "The message must be atleast 10 characters!" } })}
+                  className="min-h-[160px] w-full resize-y rounded-xl border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white p-4 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-100 dark:focus:ring-blue-500 transition-colors duration-300" 
+                  placeholder="Describe your issue or request here..."></textarea>
+                  {errors.message && <p className="text-red-500 text-sm">{errors.message.message}</p>}
               </label>
-              <button type='submit' className="mt-4 flex h-14 w-full items-center justify-center rounded-full bg-blue-600 dark:bg-blue-700 text-white hover:bg-blue-700 dark:hover:bg-blue-600 transition-all font-bold text-lg shadow-md">
-                Send Message
+              <button disabled={loading} type='submit' className="mt-4 flex h-14 w-full items-center justify-center rounded-full bg-blue-600 dark:bg-blue-700 text-white hover:bg-blue-700 dark:hover:bg-blue-600 transition-all font-bold text-lg shadow-md">
+                {loading ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           </div>
