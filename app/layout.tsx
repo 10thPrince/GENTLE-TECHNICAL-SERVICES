@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "electrical installation",
     "building maintenance",
     "technical services company",
-    "plumbing services",
+    "electrical services",
     "facility management",
     "Rwanda technical services",
   ],
@@ -38,13 +38,13 @@ export const metadata: Metadata = {
   creator: "Gentle Technical Services",
   publisher: "Gentle Technical Services",
 
-  metadataBase: new URL("https://gentle-technical-services.vercel.app/"), // change to your real domain
+  metadataBase: new URL("https://gentletechnical.com/"), // change to your real domain
 
   openGraph: {
     title: "Gentle Technical Services",
     description:
       "Professional HVAC, electrical and building maintenance services for residential and commercial clients.",
-    url: "https://gentle-technical-services.vercel.app/",
+    url: "https://gentletechnical.com/",
     siteName: "Gentle Technical Services",
     images: [
       {
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://gentle-technical-services.vercel.app/",
+    canonical: "https://gentletechnical.com/",
   },
 
 };

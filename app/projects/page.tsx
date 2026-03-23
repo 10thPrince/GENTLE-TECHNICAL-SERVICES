@@ -6,26 +6,26 @@ import FloatingCompo from '@/components/FloatingCompo';
 export const metadata: Metadata = {
   title: "HVAC & Engineering Projects in Rwanda | Gentle Technical Services",
   description:
-    "Explore completed HVAC, air conditioning, ventilation and electrical engineering projects by Gentle Technical Services across Rwanda. Trusted by residential, commercial and industrial clients.",
+    "Explore completed HVAC, air conditioning, CCTV Surveillance and electrical engineering projects by Gentle Technical Services across Rwanda. Trusted by residential, commercial and industrial clients.",
 
   keywords: [
     "HVAC projects Rwanda",
     "air conditioning projects Kigali",
     "engineering projects Rwanda",
     "Gentle Technical Services projects",
-    "ventilation installation Rwanda",
+    "CCTV Surveillance installation Rwanda",
     "electrical works projects Kigali",
   ],
 
   alternates: {
-    canonical: "https://www.gentletechnicalservices.com/projects",
+    canonical: "https://www.gentletechnical.com/projects",
   },
 
   openGraph: {
     title: "Our Projects | Gentle Technical Services Rwanda",
     description:
-      "Discover HVAC, AC installation, ventilation and electrical engineering projects delivered by Gentle Technical Services across Rwanda.",
-    url: "https://www.gentletechnicalservices.com/projects",
+      "Discover HVAC, AC installation, CCTV Surveillance and electrical engineering projects delivered by Gentle Technical Services across Rwanda.",
+    url: "https://www.gentletechnical.com/projects",
     siteName: "Gentle Technical Services",
     images: [
       {

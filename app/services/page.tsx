@@ -6,29 +6,29 @@ import type { Metadata } from "next";
 import FloatingCompo from "@/components/FloatingCompo";
 
 export const metadata: Metadata = {
-  title: "Technical Services in Rwanda | HVAC, Electrical & Ventilation",
+  title: "Technical Services in Rwanda | HVAC, Electrical & CCTV Survillance",
   description:
-    "Explore professional air conditioning installation, HVAC maintenance, ventilation systems, and electrical works by Gentle Technical Services in Rwanda. Serving homes, offices, and industries.",
+    "Explore professional air conditioning installation, HVAC maintenance, Fire Suppression systems, and electrical works by Gentle Technical Services in Rwanda. Serving homes, offices, and industries.",
 
   keywords: [
     "technical services in Rwanda",
     "HVAC services Rwanda",
     "air conditioning installation Kigali",
     "AC maintenance Rwanda",
-    "ventilation systems Rwanda",
+    "CCTV Surveillance systems Rwanda",
     "electrical works Kigali",
     "Gentle Technical Services",
   ],
 
   alternates: {
-    canonical: "https://www.gentletechnicalservices.com/services",
+    canonical: "https://www.gentletechnical.com/services",
   },
 
   openGraph: {
     title: "Our Services | Gentle Technical Services Rwanda",
     description:
-      "Professional HVAC, air conditioning, ventilation, and electrical services for residential, commercial and industrial clients across Rwanda.",
-    url: "https://www.gentletechnicalservices.com/services",
+      "Professional HVAC, air conditioning, CCTV Surveillance, and electrical services for residential, commercial and industrial clients across Rwanda.",
+    url: "https://www.gentletechnical.com/services",
     siteName: "Gentle Technical Services",
     images: [
       {
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Technical Services in Rwanda | Gentle Technical Services",
     description:
-      "Reliable HVAC, AC installation, ventilation and electrical works in Kigali and across Rwanda.",
+      "Reliable HVAC, AC installation, CCTV Surveillance and electrical works in Kigali and across Rwanda.",
     images: ["/public/assets/gentle-main-2.png"],
   },
 };

@@ -16,14 +16,14 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "https://www.gentletechnicalservices.com/contact",
+    canonical: "https://www.gentletechnical.com/contact",
   },
 
   openGraph: {
     title: "Contact Us | Gentle Technical Services Rwanda",
     description:
-      "Get in touch with Gentle Technical Services for HVAC, AC repair, ventilation and electrical services across Kigali and Rwanda.",
-    url: "https://www.gentletechnicalservices.com/contact",
+      "Get in touch with Gentle Technical Services for HVAC, AC repair, CCTV Surveillance and electrical services across Kigali and Rwanda.",
+    url: "https://www.gentletechnical.com/contact",
     siteName: "Gentle Technical Services",
     images: [
       {

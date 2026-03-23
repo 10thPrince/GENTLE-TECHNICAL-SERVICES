@@ -3,19 +3,19 @@ import { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://gentle-technical-services.vercel.app/",
+      url: "https://gentletechnical.com/",
       lastModified: new Date(),
     },
     {
-      url: "https://gentle-technical-services.vercel.app/services",
+      url: "https://gentletechnical.com/services",
       lastModified: new Date(),
     },
     {
-      url: "https://gentle-technical-services.vercel.app/projects",
+      url: "https://gentletechnical.com/projects",
       lastModified: new Date(),
     },
     {
-      url: "https://gentle-technical-services.vercel.app/contact",
+      url: "https://gentletechnical.com/contact",
       lastModified: new Date(),
     },
   ];
