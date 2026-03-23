@@ -19,7 +19,7 @@ const projects = [
     {
         id: 3,
         title: 'CCTV Surveillance',
-        description: 'Mechanical ventilation for better indoor air quality.',
+        description: 'Good CCTV Surveillance for better indoor air quality.',
         images: ['/assets/gentle-camera-2.jpg', '/assets/gentle-camera-1.webp'],
     },
     {

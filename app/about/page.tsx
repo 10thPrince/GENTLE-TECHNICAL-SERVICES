@@ -4,7 +4,7 @@ import AboutClient from "./AboutClient";
 export const metadata: Metadata = {
   title: "About Gentle Technical Services | HVAC Experts in Kigali Rwanda",
   description:
-    "Learn about Gentle Technical Services, a trusted HVAC, air conditioning, ventilation and electrical solutions company in Kigali, Rwanda. Discover our mission, vision, values and customer success stories.",
+    "Learn about Gentle Technical Services, a trusted HVAC, air conditioning, CCTV Surveillance and electrical solutions company in Kigali, Rwanda. Discover our mission, vision, values and customer success stories.",
 
   keywords: [
     "about Gentle Technical Services",
@@ -12,18 +12,18 @@ export const metadata: Metadata = {
     "air conditioning experts Kigali",
     "technical services company Rwanda",
     "HVAC professionals Kigali",
-    "ventilation and electrical services Rwanda",
+    "CCTV Surveillance and electrical services Rwanda",
   ],
 
   alternates: {
-    canonical: "https://www.gentletechnicalservices.com/about",
+    canonical: "https://www.gentletechnical.com/about",
   },
 
   openGraph: {
     title: "About Us | Gentle Technical Services Rwanda",
     description:
-      "Meet Gentle Technical Services — providing professional HVAC, AC installation, ventilation and electrical engineering solutions across Kigali and Rwanda.",
-    url: "https://www.gentletechnicalservices.com/about",
+      "Meet Gentle Technical Services — providing professional HVAC, AC installation, CCTV Surveillance and electrical engineering solutions across Kigali and Rwanda.",
+    url: "https://www.gentletechnical.com/about",
     siteName: "Gentle Technical Services",
     images: [
       {

@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://gentle-technical-services.vercel.app/sitemap.xml",
+    sitemap: "https://gentletechnical.com/sitemap.xml",
   };
 }

@@ -18,9 +18,9 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             name: "Gentle Technical Services",
-            url: "https://gentle-technical-services.vercel.app/",
+            url: "https://gentletechnical.com/",
             description:
-              "HVAC, electrical, plumbing and building maintenance company.",
+              "HVAC, electrical and building maintenance company.",
             address: {
               "@type": "PostalAddress",
               addressCountry: "RW",
