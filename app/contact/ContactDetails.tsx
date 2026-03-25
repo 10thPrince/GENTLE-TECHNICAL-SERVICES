@@ -100,7 +100,7 @@ const ContactDetails = () => {
                   <div className="flex flex-col">
                     <h3 className="text-lg font-bold text-gray-900 dark:text-white">Phone Support</h3>
                     <p className="text-sm text-gray-500 dark:text-gray-300 mb-1">24/7 Hotline for emergencies</p>
-                    <a className="text-base font-bold text-blue-600 hover:underline" href="tel:+250788123456">
+                    <a className="text-base font-bold text-blue-600 hover:underline" href="tel:+250781884868">
                       +250 781 884 868
                     </a>
                   </div>
